@@ -1,0 +1,17 @@
+<mat-toolbar color="primary">
+    <span>Amazon</span>
+    <span class="spacer"></span>
+    <div class="menu-buttons">
+        <button mat-button routerLink="/products" routerLinkActive="active">Products</button>
+        <button mat-button routerLink="/support" routerLinkActive="active">Support</button>
+        <button mat-button routerLink="/cart" routerLinkActive="active">Cart</button>
+        <button mat-button routerLink="/contact-us" routerLinkActive="active">Contact Us</button>
+        <button mat-button routerLink="/faqs" routerLinkActive="active">FAQs</button>
+    </div>
+    <span class="spacer"></span>
+    <div class="cart-icon-container">
+        <div matBadgeSize="medium" matBadge="2" matBadgePosition="after"></div>
+        <mat-icon (click)="openShoppingCart()" class="cart-icon" style="padding-right: 15px;" class="cart-icon">shopping_cart</mat-icon>
+      </div>
+</mat-toolbar>
+  

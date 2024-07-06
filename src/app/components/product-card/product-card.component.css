@@ -1,0 +1,60 @@
+.product-card {
+  margin: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: transparent;
+  box-shadow: none;
+  transition: box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+}
+
+mat-card-content {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.image-container {
+  width: 100%;
+  padding-top: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.image-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+/* Styling for Add to Cart button */
+button.add-to-cart-button {
+  background-color: rgba(144, 238, 144, 0.3); /* Light greenish shade with transparency */
+  color: #333; /* Adjust text color as needed */
+  border: 1px solid rgba(144, 238, 144, 0.5); /* Border color */
+  border-radius: 20px; /* Rounded edges */
+  padding: 12px 24px; /* Increase padding for larger size */
+  font-size: 16px; /* Adjust font size as needed */
+  box-shadow: 0 4px rgba(0, 0, 0, 0.1); /* Slightly raise the button */
+  transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s; /* Add transitions for smooth effect */
+}
+
+button.add-to-cart-button:hover {
+  background-color: rgba(144, 238, 144, 0.5); /* Darker shade on hover */
+  border-color: rgba(144, 238, 144, 0.7); /* Darker border on hover */
+  box-shadow: 0 6px rgba(0, 0, 0, 0.2); /* Increase elevation on hover */
+}
+
+/* Additional styling for clicked state */
+button.add-to-cart-button.clicked {
+  background-color: rgba(144, 238, 144, 0.7); /* Darker shade when clicked */
+  border-color: rgba(144, 238, 144, 0.9); /* Darker border when clicked */
+  box-shadow: none; /* Remove box shadow when clicked */
+}

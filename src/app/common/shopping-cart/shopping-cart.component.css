@@ -1,0 +1,27 @@
+.mat-dialog-content {
+    padding: 16px;
+  }
+  
+  .mat-table {
+    width: 100%;
+  }
+  
+  .total {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  button.mat-icon-button {
+    color: #f44336; /* Red color for delete icon */
+  }
+
+  .product-image {
+    width: 30px; /* Adjust size as needed */
+    height: 30px; /* Adjust size as needed */
+    margin-right: 8px; /* Space between image and product name */
+    vertical-align: middle; /* Align image with text */
+  }
+  

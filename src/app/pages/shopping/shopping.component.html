@@ -1,0 +1,8 @@
+<div class="shopping-page">
+    <mat-grid-list cols="3" rowHeight="1:1" gutterSize="16px">
+      <mat-grid-tile *ngFor="let product of products">
+        <app-product-card [product]="product"></app-product-card>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
+  
